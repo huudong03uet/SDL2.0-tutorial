@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="project1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/project1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../fileSDL/SDL2-2.0.20/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="../fileSDL/SDL2_mixer-2.0.4/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="../fileSDL/SDL2_ttf-2.0.12/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="../fileSDL/SDL2_image-2.0.5/x86_64-w64-mingw32/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_mixer" />
+					<Add option="-lSDL2_ttf" />
+					<Add directory="../fileSDL/SDL2_image-2.0.5/x86_64-w64-mingw32/lib" />
+					<Add directory="../fileSDL/SDL2_mixer-2.0.4/x86_64-w64-mingw32/lib" />
+					<Add directory="../fileSDL/SDL2-2.0.20/x86_64-w64-mingw32/lib" />
+					<Add directory="../fileSDL/SDL2_ttf-2.0.12/x86_64-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/project1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="BossObject.cpp" />
+		<Unit filename="BossObject.h" />
+		<Unit filename="BulletObject.cpp" />
+		<Unit filename="BulletObject.h" />
+		<Unit filename="ExplosionObject.cpp" />
+		<Unit filename="ExplosionObject.h" />
+		<Unit filename="Hinhve.cpp" />
+		<Unit filename="Hinhve.h" />
+		<Unit filename="ImpTimer.cpp" />
+		<Unit filename="ImpTimer.h" />
+		<Unit filename="PlayerPower.cpp" />
+		<Unit filename="PlayerPower.h" />
+		<Unit filename="TextObject.cpp" />
+		<Unit filename="TextObject.h" />
+		<Unit filename="ThreatsObject.cpp" />
+		<Unit filename="ThreatsObject.h" />
+		<Unit filename="baseObject.cpp" />
+		<Unit filename="baseObject.h" />
+		<Unit filename="commonFunction.cpp" />
+		<Unit filename="commonFunction.h" />
+		<Unit filename="game_map.cpp" />
+		<Unit filename="game_map.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="mainObject.cpp" />
+		<Unit filename="mainObject.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
